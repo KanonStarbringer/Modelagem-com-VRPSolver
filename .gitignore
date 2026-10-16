@@ -1,0 +1,4 @@
+# saídas do BaPCod/VRPSolver
+*.dot
+*.out
+*.log
