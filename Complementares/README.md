@@ -3,6 +3,8 @@
 > Nota de estudo escrita originalmente no Obsidian. Os caminhos citados são relativos a esta pasta.
 >
 > A segunda leva de complementares (VRPTW, MDVRP e HFVRP, nas subpastas `VRPTW/`, `MDVRP/` e `HFVRP/`) está em [README-complementares-2.md](README-complementares-2.md).
+>
+> A terceira leva (VRPB, SDVRP, FSMVRP, PDPTW, E-VRP e Rich VRP, nas subpastas `VRPB/`, `SDVRP/`, `FSMVRP/`, `PDPTW/`, `EVRP/` e `RichVRP/`) está em [README-complementares-3.md](README-complementares-3.md).
 
 Data: 2026-10-16
 Contexto: Exercícios complementares da Lista 1: **CVRP simétrico**, **Open VRP (OVRP)** e **VRP com custo fixo**. Os três usam o mesmo grafo do CVRP, então compartilham parser, toy e instâncias. Segue o roteiro de [mCTP no VRPSolver - Instâncias, toy e parser](../mCTP/README.md).

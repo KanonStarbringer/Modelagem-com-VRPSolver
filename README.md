@@ -18,6 +18,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`mCTP/`](mCTP/README.md) | Multi-vehicle Covering Tour Problem | ✓ | 192 instâncias da literatura; A1-1-25-75-4-250 bate com Oliveira et al. |
 | [`Complementares/`](Complementares/README.md) | CVRP simétrico, Open VRP e VRP com custo fixo | ✓ | 85 instâncias A/B/E/P (CVRPLIB); A-n32-k5 bate com a CVRPLIB e com Letchford et al. (2007) |
 | [`Complementares/` (2)](Complementares/README-complementares-2.md) | VRPTW, Multi-Depot VRP e Heterogeneous Fleet VRP | ✓ | Solomon (56), Cordeau (23), Golden/Taillard (8); R101, p01, p02 e c50_14hd batem com os ótimos |
+| [`Complementares/` (3)](Complementares/README-complementares-3.md) | VRPB (formulações F1 e F2 de Queiroga et al.), Site-Dependent VRP, Fleet Size and Mix VRP, PDPTW, E-VRP e Rich VRP | ✓ | Toth-Vigo (33) e GJB (68); Chao et al. (23); Golden FSM (24); Li & Lim (56); G-VRP (96); Rich VRP com regressões em VRPTW/MDVRP |
 
 Cada pasta de exercício tem:
 
@@ -49,5 +50,9 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - Complementares: Augerat et al. (A, B, P), Christofides & Eilon (E), via [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/); ótimos do OVRP de Letchford, Lysgaard & Eglese (2007).
 - VRPTW: Solomon (1987), soluções da CVRPLIB via [PyVRP/VRPLIB](https://github.com/PyVRP/VRPLIB).
 - MDVRP: Cordeau, Gendreau & Laporte (1997), via [fboliveira/MDVRP-Instances](https://github.com/fboliveira/MDVRP-Instances).
-- HFVRP: Golden et al. (1984) / Taillard (1999), via [VRPSolverEasy](https://github.com/inria-UFF/VRPSolverEasy).
+- HFVRP e FSMVRP: Golden et al. (1984) / Taillard (1999), via [VRPSolverEasy](https://github.com/inria-UFF/VRPSolverEasy).
+- VRPB: Toth & Vigo (1997) e Goetschalckx & Jacobs-Blecha (1989), nas versões usadas por Queiroga et al. (2020).
+- SDVRP: Chao, Golden & Wasil (1999), formato de Cordeau, via [espelho](https://github.com/pauljmello/HGSADC-vs-ACS-on-SDVRP).
+- PDPTW: Li & Lim (2001), dados do SINTEF via [zhu-he/pdptw-data](https://github.com/zhu-he/pdptw-data).
+- E-VRP: G-VRP de Erdoğan & Miller-Hooks (2012), versão da [UNICAMP](https://www.ic.unicamp.br/~fusberti/problems/gvrp/).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).

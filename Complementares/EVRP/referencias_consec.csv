@@ -1,0 +1,49 @@
+instancia,clientes,estacoes,melhor_publicado,md4_igual_md5,metodos
+mlsa_flow_10c5f23.000000B-P-n16-k8.vrp,10,5,284,True,Cubic=284 MD_4=284 MD_5=284
+mlsa_flow_11c4f25.000000B-P-n16-k8.vrp,11,4,277,True,Cubic=277 MD_4=277 MD_5=277
+mlsa_flow_13c2f55.000000B-P-n16-k8.vrp,13,2,228,True,Cubic=355 MD_4=228 MD_5=228
+mlsa_flow_13c5f21.000000B-P-n19-k2.vrp,13,5,377,True,Cubic=377 MD_4=377 MD_5=377
+mlsa_flow_13c7f19.000000B-P-n21-k2.vrp,13,7,331,True,Cubic=331 MD_4=331 MD_5=331
+mlsa_flow_14c4f25.000000B-P-n19-k2.vrp,14,4,316,True,Cubic=316 MD_4=316 MD_5=316
+mlsa_flow_14c5f21.000000B-P-n20-k2.vrp,14,5,395,True,Cubic=395 MD_4=395 MD_5=395
+mlsa_flow_14c7f19.000000B-P-n22-k2.vrp,14,7,315,True,Cubic=315 MD_4=315 MD_5=315
+mlsa_flow_15c4f25.000000B-P-n20-k2.vrp,15,4,351,True,Cubic=351 MD_4=351 MD_5=351
+mlsa_flow_15c5f23.000000B-P-n21-k2.vrp,15,5,336,True,Cubic=339 MD_4=336 MD_5=336
+mlsa_flow_15c7f19.000000B-P-n23-k8.vrp,15,7,282,True,Cubic=282 MD_4=282 MD_5=282
+mlsa_flow_16c5f23.000000B-P-n22-k2.vrp,16,5,388,True,Cubic=710 MD_4=388 MD_5=388
+mlsa_flow_17c1f60.000000B-P-n19-k2.vrp,17,1,322,True,Cubic=453 MD_4=322 MD_5=322
+mlsa_flow_17c2f55.000000B-P-n20-k2.vrp,17,2,295,True,MD_4=295 MD_5=295
+mlsa_flow_17c5f23.000000B-P-n23-k8.vrp,17,5,388,True,Cubic=501 MD_4=388 MD_5=388
+mlsa_flow_18c2f40.000000B-P-n21-k2.vrp,18,2,466,True,MD_4=466 MD_5=466
+mlsa_flow_19c2f40.000000B-P-n22-k2.vrp,19,2,382,True,MD_4=382 MD_5=382
+mlsa_flow_20c2f40.000000B-P-n23-k8.vrp,20,2,421,False,MD_4=429 MD_5=421
+mlsa_flow_27c12f23.000000B-P-n40-k5.vrp,27,12,569,False,MD_4=570 MD_5=569
+mlsa_flow_29c15f21.000000B-P-n45-k5.vrp,29,15,717,False,MD_4=722 MD_5=717
+mlsa_flow_31c19f19.000000B-P-n51-k10.vrp,31,19,643,False,MD_4=659 MD_5=643
+mlsa_flow_31c8f27.000000B-P-n40-k5.vrp,31,8,652,False,MD_4=656 MD_5=652
+mlsa_flow_32c17f19.000000B-P-n50-k7.vrp,32,17,633,False,MD_4=670 MD_5=633
+mlsa_flow_33c21f17.000000B-P-n55-k7.vrp,33,21,615,False,MD_4=626 MD_5=615
+mlsa_flow_35c4f51.000000B-P-n40-k5.vrp,35,4,632,False,MD_4=656 MD_5=632
+mlsa_flow_35c9f25.000000B-P-n45-k5.vrp,35,9,790,False,MD_4=828 MD_5=790
+mlsa_flow_37c13f23.000000B-P-n51-k10.vrp,37,13,852,False,MD_4=939 MD_5=852
+mlsa_flow_39c10f25.000000B-P-n50-k7.vrp,39,10,732,False,MD_4=799 MD_5=732
+mlsa_flow_40c24f17.000000B-P-n65-k10.vrp,40,24,739,False,MD_4=826 MD_5=739
+mlsa_flow_40c4f42.000000B-P-n45-k5.vrp,40,4,757,False,MD_4=809 MD_5=757
+mlsa_flow_42c17f19.000000B-P-n60-k10.vrp,42,17,775,False,MD_4=901 MD_5=775
+mlsa_flow_43c11f23.000000B-P-n55-k7.vrp,43,11,727,False,MD_4=812 MD_5=727
+mlsa_flow_45c4f42.000000B-P-n50-k7.vrp,45,4,846,False,MD_4=882 MD_5=846
+mlsa_flow_45c5f36.000000B-P-n51-k10.vrp,45,5,1040,False,MD_4=1108 MD_5=1040
+mlsa_flow_47c12f23.000000B-P-n60-k10.vrp,47,12,891,False,MD_4=979 MD_5=891
+mlsa_flow_48c21f19.000000B-P-n70-k10.vrp,48,21,859,False,MD_4=1030 MD_5=859
+mlsa_flow_49c5f32.000000B-P-n55-k7.vrp,49,5,943,False,MD_4=959 MD_5=943
+mlsa_flow_50c14f23.000000B-P-n65-k10.vrp,50,14,814,False,MD_4=944 MD_5=814
+mlsa_flow_51c24f17.000000B-P-n76-k4.vrp,51,24,757,False,MD_4=844 MD_5=757
+mlsa_flow_54c15f23.000000B-P-n70-k10.vrp,54,15,903,False,MD_4=993 MD_5=903
+mlsa_flow_54c5f36.000000B-P-n60-k10.vrp,54,5,984,False,MD_4=1074 MD_5=984
+mlsa_flow_58c17f21.000000B-P-n76-k4.vrp,58,17,850,False,MD_4=955 MD_5=850
+mlsa_flow_58c6f36.000000B-P-n65-k10.vrp,58,6,1070,False,MD_4=1160 MD_5=1070
+mlsa_flow_63c6f36.000000B-P-n70-k10.vrp,63,6,1147,False,MD_4=1376 MD_5=1147
+mlsa_flow_65c35f15.000000B-P-n101-k4.vrp,65,35,905,False,MD_4=1125 MD_5=905
+mlsa_flow_68c7f32.000000B-P-n76-k4.vrp,68,7,1157,False,MD_4=1245 MD_5=1157
+mlsa_flow_78c22f19.000000B-P-n101-k4.vrp,78,22,1213,False,MD_4=1416 MD_5=1213
+mlsa_flow_88c12f25.000000B-P-n101-k4.vrp,88,12,1366,False,MD_4=2313 MD_5=1366

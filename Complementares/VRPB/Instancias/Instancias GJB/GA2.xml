@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<instance>
+    <info>
+        <dataset></dataset>
+        <name></name>
+    </info>
+    <network>
+        <nodes>
+            <node type="0" id="1">
+                <cx>12000.0</cx>
+                <cy>16000.0</cy>
+            </node>
+            <node type="1" id="2">
+                <cx>21524.0</cx>
+                <cy>24879.0</cy>
+            </node>
+            <node type="1" id="3">
+                <cx>22337.0</cx>
+                <cy>17915.0</cy>
+            </node>
+            <node type="1" id="4">
+                <cx>7642.0</cx>
+                <cy>9722.0</cy>
+            </node>
+            <node type="1" id="5">
+                <cx>3707.0</cx>
+                <cy>20036.0</cy>
+            </node>
+            <node type="1" id="6">
+                <cx>15492.0</cx>
+                <cy>2721.0</cy>
+            </node>
+            <node type="1" id="7">
+                <cx>12430.0</cx>
+                <cy>10638.0</cy>
+            </node>
+            <node type="1" id="8">
+                <cx>13595.0</cx>
+                <cy>1918.0</cy>
+            </node>
+            <node type="1" id="9">
+                <cx>4290.0</cx>
+                <cy>2721.0</cy>
+            </node>
+            <node type="1" id="10">
+                <cx>18684.0</cx>
+                <cy>5268.0</cy>
+            </node>
+            <node type="1" id="11">
+                <cx>8686.0</cx>
+                <cy>9546.0</cy>
+            </node>
+            <node type="1" id="12">
+                <cx>23140.0</cx>
+                <cy>10989.0</cy>
+            </node>
+            <node type="1" id="13">
+                <cx>5263.0</cx>
+                <cy>14289.0</cy>
+            </node>
+            <node type="1" id="14">
+                <cx>19557.0</cx>
+                <cy>17564.0</cy>
+            </node>
+            <node type="1" id="15">
+                <cx>23281.0</cx>
+                <cy>29684.0</cy>
+            </node>
+            <node type="1" id="16">
+                <cx>374.0</cx>
+                <cy>22683.0</cy>
+            </node>
+            <node type="1" id="17">
+                <cx>18804.0</cx>
+                <cy>9082.0</cy>
+            </node>
+            <node type="1" id="18">
+                <cx>5444.0</cx>
+                <cy>25004.0</cy>
+            </node>
+            <node type="1" id="19">
+                <cx>20390.0</cx>
+                <cy>25745.0</cy>
+            </node>
+            <node type="1" id="20">
+                <cx>4310.0</cx>
+                <cy>21692.0</cy>
+            </node>
+            <node type="2" id="21">
+                <cx>8526.0</cx>
+                <cy>2495.0</cy>
+            </node>
+            <node type="2" id="22">
+                <cx>9795.0</cx>
+                <cy>21510.0</cy>
+            </node>
+            <node type="2" id="23">
+                <cx>7758.0</cx>
+                <cy>10895.0</cy>
+            </node>
+            <node type="2" id="24">
+                <cx>12927.0</cx>
+                <cy>2464.0</cy>
+            </node>
+            <node type="2" id="25">
+                <cx>23286.0</cx>
+                <cy>5538.0</cy>
+            </node>
+            <node type="2" id="26">
+                <cx>7416.0</cx>
+                <cy>15826.0</cy>
+            </node>
+        </nodes>
+        <euclidean/>
+        <decimals>0</decimals>
+    </network>
+    <fleet>
+        <vehicle_profile number="5" type="0">
+            <departure_node>1</departure_node>
+            <arrival_node>1</arrival_node>
+            <capacity>2550.0</capacity>
+        </vehicle_profile>
+    </fleet>
+    <requests>
+        <request node="2" id="1">
+            <quantity>483.0</quantity>
+        </request>
+        <request node="3" id="2">
+            <quantity>389.0</quantity>
+        </request>
+        <request node="4" id="3">
+            <quantity>435.0</quantity>
+        </request>
+        <request node="5" id="4">
+            <quantity>452.0</quantity>
+        </request>
+        <request node="6" id="5">
+            <quantity>343.0</quantity>
+        </request>
+        <request node="7" id="6">
+            <quantity>444.0</quantity>
+        </request>
+        <request node="8" id="7">
+            <quantity>350.0</quantity>
+        </request>
+        <request node="9" id="8">
+            <quantity>307.0</quantity>
+        </request>
+        <request node="10" id="9">
+            <quantity>810.0</quantity>
+        </request>
+        <request node="11" id="10">
+            <quantity>1002.0</quantity>
+        </request>
+        <request node="12" id="11">
+            <quantity>476.0</quantity>
+        </request>
+        <request node="13" id="12">
+            <quantity>674.0</quantity>
+        </request>
+        <request node="14" id="13">
+            <quantity>691.0</quantity>
+        </request>
+        <request node="15" id="14">
+            <quantity>675.0</quantity>
+        </request>
+        <request node="16" id="15">
+            <quantity>410.0</quantity>
+        </request>
+        <request node="17" id="16">
+            <quantity>351.0</quantity>
+        </request>
+        <request node="18" id="17">
+            <quantity>786.0</quantity>
+        </request>
+        <request node="19" id="18">
+            <quantity>59.0</quantity>
+        </request>
+        <request node="20" id="19">
+            <quantity>362.0</quantity>
+        </request>
+        <request node="21" id="20">
+            <quantity>550.0</quantity>
+        </request>
+        <request node="22" id="21">
+            <quantity>549.0</quantity>
+        </request>
+        <request node="23" id="22">
+            <quantity>558.0</quantity>
+        </request>
+        <request node="24" id="23">
+            <quantity>851.0</quantity>
+        </request>
+        <request node="25" id="24">
+            <quantity>388.0</quantity>
+        </request>
+        <request node="26" id="25">
+            <quantity>194.0</quantity>
+        </request>
+    </requests>
+</instance>
