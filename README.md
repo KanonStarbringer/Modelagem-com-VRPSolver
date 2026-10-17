@@ -16,6 +16,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`PTP/`](PTP/README.md) | Profitable Tour Problem com capacidade (CPTP) | ✓ | 10 instâncias de Archetti et al.; p06 resolvido |
 | [`GVRP/`](GVRP/README.md) | Generalized VRP | ✓ | Ótimos de Bektaş et al. (2011) catalogados; arquivos originais indisponíveis |
 | [`mCTP/`](mCTP/README.md) | Multi-vehicle Covering Tour Problem | ✓ | 192 instâncias da literatura; A1-1-25-75-4-250 bate com Oliveira et al. |
+| [`Complementares/`](Complementares/README.md) | CVRP simétrico, Open VRP e VRP com custo fixo | ✓ | 85 instâncias A/B/E/P (CVRPLIB); A-n32-k5 bate com a CVRPLIB e com Letchford et al. (2007) |
 
 Cada pasta de exercício tem:
 
@@ -34,7 +35,7 @@ julia dcvrp_parser.jl     # auto-teste do parser
 julia dcvrp_model.jl      # resolve a instância configurada no topo do arquivo
 ```
 
-No topo de cada `*_model.jl`, escolha a instância e ajuste o **cutoff** (`ub`) para o ótimo conhecido mais 0.01. Os caminhos são montados com `joinpath(@__DIR__, ...)`, então funcionam a partir de qualquer diretório. O `MTVRP/` usa o parser e as instâncias CMT da pasta `DCVRP/`, então mantenha as duas lado a lado.
+No topo de cada `*_model.jl`, escolha a instância e ajuste o **cutoff** (`ub`) para o ótimo conhecido mais 0.01. Os caminhos são montados com `joinpath(@__DIR__, ...)`, então funcionam a partir de qualquer diretório. O `MTVRP/` usa o parser e as instâncias CMT da pasta `DCVRP/`, e o `Complementares/` usa o parser dela, então mantenha as pastas lado a lado.
 
 ## Fontes das instâncias
 
@@ -44,4 +45,5 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - DCVRP e MTVRP: Christofides, Mingozzi & Toth (CMT), via [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/).
 - TOP: Chao, Golden & Wasil (1996), via [KU Leuven](https://www.mech.kuleuven.be/en/cib/op).
 - PTP: Archetti, Feillet, Hertz & Speranza (2009), via [OR@Brescia](https://or-brescia.unibs.it/instances).
+- Complementares: Augerat et al. (A, B, P), Christofides & Eilon (E), via [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/); ótimos do OVRP de Letchford, Lysgaard & Eglese (2007).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).
