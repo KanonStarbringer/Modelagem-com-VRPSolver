@@ -6,6 +6,23 @@
 >
 > A terceira leva (VRPB, SDVRP, FSMVRP, PDPTW, E-VRP e Rich VRP, nas subpastas `VRPB/`, `SDVRP/`, `FSMVRP/`, `PDPTW/`, `EVRP/` e `RichVRP/`) está em [README-complementares-3.md](README-complementares-3.md).
 
+## Índice dos modelos
+
+| Leva | Problema | Pasta |
+|---|---|---|
+| 1 | CVRP simétrico | [`CVRP/`](CVRP/README.md) |
+| 1 | Open VRP | [`OVRP/`](OVRP/README.md) |
+| 1 | VRP com custo fixo | [`FCVRP/`](FCVRP/README.md) |
+| 2 | VRP com janelas de tempo | [`VRPTW/`](VRPTW/README.md) |
+| 2 | Multi-Depot VRP | [`MDVRP/`](MDVRP/README.md) |
+| 2 | Heterogeneous Fleet VRP | [`HFVRP/`](HFVRP/README.md) |
+| 3 | VRP with Backhauls (F1 e F2) | [`VRPB/`](VRPB/README.md) |
+| 3 | Site-Dependent VRP | [`SDVRP/`](SDVRP/README.md) |
+| 3 | Fleet Size and Mix VRP | [`FSMVRP/`](FSMVRP/README.md) |
+| 3 | Pickup and Delivery com janelas | [`PDPTW/`](PDPTW/README.md) |
+| 3 | Electric VRP (recarga completa) | [`EVRP/`](EVRP/README.md) |
+| 3 | Rich VRP | [`RichVRP/`](RichVRP/README.md) |
+
 Data: 2026-10-16
 Contexto: Exercícios complementares da Lista 1: **CVRP simétrico**, **Open VRP (OVRP)** e **VRP com custo fixo**. Os três usam o mesmo grafo do CVRP, então compartilham parser, toy e instâncias. Segue o roteiro de [mCTP no VRPSolver - Instâncias, toy e parser](../mCTP/README.md).
 
