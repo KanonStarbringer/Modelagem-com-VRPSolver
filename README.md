@@ -17,6 +17,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`GVRP/`](GVRP/README.md) | Generalized VRP | ✓ | Ótimos de Bektaş et al. (2011) catalogados; arquivos originais indisponíveis |
 | [`mCTP/`](mCTP/README.md) | Multi-vehicle Covering Tour Problem | ✓ | 192 instâncias da literatura; A1-1-25-75-4-250 bate com Oliveira et al. |
 | [`Complementares/`](Complementares/README.md) | CVRP simétrico, Open VRP e VRP com custo fixo | ✓ | 85 instâncias A/B/E/P (CVRPLIB); A-n32-k5 bate com a CVRPLIB e com Letchford et al. (2007) |
+| [`Complementares/` (2)](Complementares/README-complementares-2.md) | VRPTW, Multi-Depot VRP e Heterogeneous Fleet VRP | ✓ | Solomon (56), Cordeau (23), Golden/Taillard (8); R101, p01, p02 e c50_14hd batem com os ótimos |
 
 Cada pasta de exercício tem:
 
@@ -46,4 +47,7 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - TOP: Chao, Golden & Wasil (1996), via [KU Leuven](https://www.mech.kuleuven.be/en/cib/op).
 - PTP: Archetti, Feillet, Hertz & Speranza (2009), via [OR@Brescia](https://or-brescia.unibs.it/instances).
 - Complementares: Augerat et al. (A, B, P), Christofides & Eilon (E), via [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/); ótimos do OVRP de Letchford, Lysgaard & Eglese (2007).
+- VRPTW: Solomon (1987), soluções da CVRPLIB via [PyVRP/VRPLIB](https://github.com/PyVRP/VRPLIB).
+- MDVRP: Cordeau, Gendreau & Laporte (1997), via [fboliveira/MDVRP-Instances](https://github.com/fboliveira/MDVRP-Instances).
+- HFVRP: Golden et al. (1984) / Taillard (1999), via [VRPSolverEasy](https://github.com/inria-UFF/VRPSolverEasy).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).
