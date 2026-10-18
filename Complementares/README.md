@@ -5,6 +5,8 @@
 > A segunda leva de complementares (VRPTW, MDVRP e HFVRP, nas subpastas `VRPTW/`, `MDVRP/` e `HFVRP/`) está em [README-complementares-2.md](README-complementares-2.md).
 >
 > A terceira leva (VRPB, SDVRP, FSMVRP, PDPTW, E-VRP e Rich VRP, nas subpastas `VRPB/`, `SDVRP/`, `FSMVRP/`, `PDPTW/`, `EVRP/` e `RichVRP/`) está em [README-complementares-3.md](README-complementares-3.md).
+>
+> A quarta leva (TSPHS, OPHS, VRP-D e BPP, da Aula 5, nas subpastas `TSPHS/`, `OPHS/`, `VRPD/` e `BPP/`) está em [README-complementares-4.md](README-complementares-4.md).
 
 ## Índice dos modelos
 
@@ -22,6 +24,10 @@
 | 3 | Pickup and Delivery com janelas | [`PDPTW/`](PDPTW/README.md) |
 | 3 | Electric VRP (recarga completa) | [`EVRP/`](EVRP/README.md) |
 | 3 | Rich VRP | [`RichVRP/`](RichVRP/README.md) |
+| 4 | TSP with Hotel Selection | [`TSPHS/`](TSPHS/README.md) |
+| 4 | Orienteering Problem with Hotel Selection | [`OPHS/`](OPHS/README.md) |
+| 4 | VRP com drone (1 caminhão + 1 drone) | [`VRPD/`](VRPD/README.md) |
+| 4 | Bin Packing | [`BPP/`](BPP/README.md) |
 
 Data: 2026-10-16
 Contexto: Exercícios complementares da Lista 1: **CVRP simétrico**, **Open VRP (OVRP)** e **VRP com custo fixo**. Os três usam o mesmo grafo do CVRP, então compartilham parser, toy e instâncias. Segue o roteiro de [mCTP no VRPSolver - Instâncias, toy e parser](../mCTP/README.md).

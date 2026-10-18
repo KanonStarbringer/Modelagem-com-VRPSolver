@@ -19,6 +19,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`Complementares/`](Complementares/README.md) | CVRP simétrico, Open VRP e VRP com custo fixo | ✓ | 85 instâncias A/B/E/P (CVRPLIB); A-n32-k5 bate com a CVRPLIB e com Letchford et al. (2007) |
 | [`Complementares/` (2)](Complementares/README-complementares-2.md) | VRPTW, Multi-Depot VRP e Heterogeneous Fleet VRP | ✓ | Solomon (56), Cordeau (23), Golden/Taillard (8); R101, p01, p02 e c50_14hd batem com os ótimos |
 | [`Complementares/` (3)](Complementares/README-complementares-3.md) | VRPB (formulações F1 e F2 de Queiroga et al.), Site-Dependent VRP, Fleet Size and Mix VRP, PDPTW, E-VRP e Rich VRP | ✓ | Toth-Vigo (33) e GJB (68); Chao et al. (23); Golden FSM (24); Li & Lim (56); G-VRP (96); Rich VRP com regressões em VRPTW/MDVRP |
+| [`Complementares/` (4)](Complementares/README-complementares-4.md) | Aula 5: TSPHS e OPHS (cortes de conectividade sob demanda), VRP com drone (arcos paralelos, packing sets em arcos) e Bin Packing (Ryan-Foster) | ✓ | Barbosa (2018) (267); Divsalar/Sohrabi (90); TSPLIB (5); BPPLIB (88); h05_c50_l150_09, eil51-H4-T3-S3 e u120_00 batem |
 
 Cada pasta de exercício tem:
 
@@ -55,4 +56,8 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - SDVRP: Chao, Golden & Wasil (1999), formato de Cordeau, via [espelho](https://github.com/pauljmello/HGSADC-vs-ACS-on-SDVRP).
 - PDPTW: Li & Lim (2001), dados do SINTEF via [zhu-he/pdptw-data](https://github.com/zhu-he/pdptw-data).
 - E-VRP: G-VRP de Erdoğan & Miller-Hooks (2012), versão da [UNICAMP](https://www.ic.unicamp.br/~fusberti/problems/gvrp/).
+- TSPHS: Barbosa (2018), via [mcroboredo/TSPHS_OPHS](https://github.com/mcroboredo/TSPHS_OPHS).
+- OPHS: Divsalar, Vansteenwegen & Cattrysse (2013) e Sohrabi, Ziarati & Keshtkaran (2021, [Mendeley Data](https://doi.org/10.17632/bct4g4w9y2.1)).
+- VRP-D: TSPLIB (Reinelt, 1991), com alcance e custo do drone definidos aqui.
+- BPP: Falkenauer (1996) e Hard28 (Schoenfield), via [BPPLIB](https://github.com/mdelorme2/BPPLIB).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).
