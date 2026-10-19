@@ -61,4 +61,6 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - OPHS: Divsalar, Vansteenwegen & Cattrysse (2013) e Sohrabi, Ziarati & Keshtkaran (2021, [Mendeley Data](https://doi.org/10.17632/bct4g4w9y2.1)).
 - VRP-D: TSPLIB (Reinelt, 1991), com alcance e custo do drone definidos aqui.
 - BPP: Falkenauer (1996) e Hard28 (Schoenfield), via [BPPLIB](https://github.com/mdelorme2/BPPLIB).
+- CSP: Falkenauer (U e T), Schwerin & Wäscher (1 e 2) e Hard28, nas versões CSP da [BPPLIB](https://github.com/mdelorme2/BPPLIB) (Delorme, Iori & Martello, 2018).
+- VPP: Spieksma (1994) e Caprara & Toth (2001), via [biblioteca da Universidade de Bolonha](https://site.unibo.it/operations-research/en/research/library-of-codes-and-instances-1).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).
