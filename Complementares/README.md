@@ -9,6 +9,8 @@
 > A quarta leva (TSPHS, OPHS, VRP-D e BPP, da Aula 5, nas subpastas `TSPHS/`, `OPHS/`, `VRPD/` e `BPP/`) está em [README-complementares-4.md](README-complementares-4.md).
 >
 > A quinta leva (Cutting Stock e Vector Packing 2D, extensões do BPP, nas subpastas `CSP/` e `VPP/`) está em [README-complementares-5.md](README-complementares-5.md).
+>
+> A sexta leva (Generalized Assignment Problem e Capacitated Arc Routing Problem, nas subpastas `GAP/` e `CARP/`) está em [README-complementares-6.md](README-complementares-6.md).
 
 ## Índice dos modelos
 
@@ -32,6 +34,8 @@
 | 4 | Bin Packing | [`BPP/`](BPP/README.md) |
 | 5 | Cutting Stock (arc-flow) | [`CSP/`](CSP/README.md) |
 | 5 | Vector Packing 2D | [`VPP/`](VPP/README.md) |
+| 6 | Generalized Assignment (um grafo por agente) | [`GAP/`](GAP/README.md) |
+| 6 | Capacitated Arc Routing (grafo de estados, RCC) | [`CARP/`](CARP/README.md) |
 
 Data: 2026-10-16
 Contexto: Exercícios complementares da Lista 1: **CVRP simétrico**, **Open VRP (OVRP)** e **VRP com custo fixo**. Os três usam o mesmo grafo do CVRP, então compartilham parser, toy e instâncias. Segue o roteiro de [mCTP no VRPSolver - Instâncias, toy e parser](../mCTP/README.md).

@@ -21,6 +21,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`Complementares/` (3)](Complementares/README-complementares-3.md) | VRPB (formulações F1 e F2 de Queiroga et al.), Site-Dependent VRP, Fleet Size and Mix VRP, PDPTW, E-VRP e Rich VRP | ✓ | Toth-Vigo (33) e GJB (68); Chao et al. (23); Golden FSM (24); Li & Lim (56); G-VRP (96); Rich VRP com regressões em VRPTW/MDVRP |
 | [`Complementares/` (4)](Complementares/README-complementares-4.md) | Aula 5: TSPHS e OPHS (cortes de conectividade sob demanda), VRP com drone (arcos paralelos, packing sets em arcos) e Bin Packing (Ryan-Foster) | ✓ | Barbosa (2018) (267); Divsalar/Sohrabi (90); TSPLIB (5); BPPLIB (88); h05_c50_l150_09, eil51-H4-T3-S3 e u120_00 batem |
 | [`Complementares/` (5)](Complementares/README-complementares-5.md) | Cutting Stock (grafo arc-flow, sem packing sets, multiplicidade de caminhos) e Vector Packing 2D (dois recursos principais) | ✓ | BPPLIB CSP (388); Spieksma e Caprara & Toth (400); u120_00, u1000_00, Hard28_BPP14, CL_06_25_01 e CL_09_25_01 batem |
+| [`Complementares/` (6)](Complementares/README-complementares-6.md) | Generalized Assignment (grafos heterogêneos, packing sets atravessando os grafos) e CARP (grafo de estados de arestas, cortes de capacidade) | ✓ | Yagiura C, D e E (45); gdb, val, egl e kshs (87); c05100, d05100, d05200, gdb1, val1C, val3C, kshs1 e egl-e1-C batem |
 
 Cada pasta de exercício tem:
 
@@ -63,4 +64,6 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - BPP: Falkenauer (1996) e Hard28 (Schoenfield), via [BPPLIB](https://github.com/mdelorme2/BPPLIB).
 - CSP: Falkenauer (U e T), Schwerin & Wäscher (1 e 2) e Hard28, nas versões CSP da [BPPLIB](https://github.com/mdelorme2/BPPLIB) (Delorme, Iori & Martello, 2018).
 - VPP: Spieksma (1994) e Caprara & Toth (2001), via [biblioteca da Universidade de Bolonha](https://site.unibo.it/operations-research/en/research/library-of-codes-and-instances-1).
+- GAP: Yagiura, Ibaraki & Glover (2004), tipos C, D e E, via [página de M. Yagiura](http://www.al.cm.is.nagoya-u.ac.jp/~yagiura/gap/) e [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/gapinfo.html).
+- CARP: gdb, val, egl e kshs, via [CARPData.jl](https://github.com/rafaelmartinelli/CARPData.jl) (R. Martinelli).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).
