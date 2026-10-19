@@ -2,7 +2,7 @@
 
 > Parte dos [exercícios complementares](../README.md) da disciplina **Modelagem com VRPSolver** (PPGEP/UFF). Nota completa da leva: [`README-complementares-3.md`](../README-complementares-3.md).
 
-Clientes *linehaul* (entregas) e *backhaul* (coletas): em cada rota todas as entregas vêm antes das coletas, e cada uma das duas cargas respeita $Q$ separadamente. Implementado nas duas formulações de Queiroga et al. (2020): **F1** (`vrpb1_model.jl`, um grafo) e **F2** (`vrpb2_model.jl`, dois grafos emparelhados).
+Clientes *linehaul* (entregas) e *backhaul* (coletas): em cada rota todas as entregas vêm antes das coletas, e cada uma das duas cargas respeita $Q$ separadamente. Implementado nas duas formulações de Queiroga et al. (2020): **F1** (`vrpb1_model.jl`, um grafo) e **F2** (`vrpb2_model.jl`, dois grafos emparelhados), mais uma proposta própria, **F3** (`vrpb3_model.jl`, F2 com o primeiro backhaul declarado em $G^L$).
 
 ## Como rodar
 
@@ -10,6 +10,7 @@ Clientes *linehaul* (entregas) e *backhaul* (coletas): em cada rota todas as ent
 julia vrpb_parser.jl      # auto-teste do parser
 julia vrpb1_model.jl
 julia vrpb2_model.jl
+julia vrpb3_model.jl
 ```
 
 No topo de cada `*_model.jl`, escolha a instância e ajuste o cutoff `ub` para o ótimo conhecido + 0.01.
@@ -164,6 +165,56 @@ EIL22_50 (F2) conferido em Julia: mesmas rotas da F1, exceto o fim da terceira, 
 Na F2, a matriz de `define_elementarity_sets_distance_matrix!` foi passada com dimensão $3n_L + n_B$ (um índice por packing set, na ordem de `ps_fis`), uma chamada por grafo. O VRPSolver aceitou.
 
 EIL22_50 (F1) conferido em Julia: 0-7-6-2-13-15-0 (102; entrega 3300, coleta 1500), 0-8-5-4-3-1-12-14-16-17-0 (151; 5400 / 3000), 0-10-11-9-21-20-18-19-0 (118; 4200 / 5100). São 21 clientes, linehauls sempre antes dos backhauls, e as duas cargas ≤ Q = 6000.
+
+## F3 (proposta) — F2 com o primeiro backhaul declarado em $G^L$
+
+**Motivação:** pela Prop. 1 de Queiroga et al., as relaxações de F1 e F2 sem cortes são iguais. Pela Prop. 2, os cortes rank-1 da F1 são mais fortes nos subconjuntos **mistos**, com linehauls e backhauls juntos. A F2 não os enxerga, porque cada coluna só vê um dos lados. A F3 tenta recuperar parte desses cortes sem perder o pricing barato da F2: o caminho de $G^L$ passa a "declarar" o primeiro backhaul da rota.
+
+- **Variáveis:** $x_a$ como na F2, mais $z_{(l,b)} \in \mathbb{Z}_+$ para $l \in L$ e $b \in B \cup \{0\}$. O valor $b = 0$ indica rota só com linehauls.
+- **Mestre:** cobertura como na F2, mais o emparelhamento por arco de cruzamento, $z_{(l,b)} = x_{(l,b)}$.
+- **Grafo $G^L$:** o da F2, mais uma **sombra** $\hat b$ por backhaul, que usa o id do próprio $b$.
+  - $(l, l')$: sem mapeamento.
+  - $(l', \hat b)$: mapeado em $z_{(l,b)}$.
+  - $(l', 0')$: mapeado em $z_{(l,0)}$.
+  - $(\hat b, 0')$: sem mapeamento.
+- **Grafo $G^B$:** o da F2, mas $(0', l)$ fica **sem mapeamento**. Os arcos $(l, b)$ e $(l, 0)$ continuam em $x$, e é por eles que $G^B$ se amarra a $z$.
+- **Packing sets:** os da F2, mais um singleton $\{\hat b\}$ em $G^L$ para cada $b \in B$. Assim, um rank-1 de $G^L$ pode conter linehauls e o primeiro backhaul.
+- **Arquivo:** `vrpb3_model.jl`, gerado a partir do `vrpb2_model.jl`.
+
+Armadilhas, conferidas por enumeração de colunas na toy:
+
+| Modelo errado | Resultado |
+|---|---|
+| $x_{(l,b)}$ mapeado também no arco $(l', \hat b)$ | **220**: o cruzamento é contado duas vezes |
+| Sem o arco $(l', 0')$ | **194**: a rota 0-1-0 fica impossível |
+
+**Na Figura 2 do artigo** (3-SRC em {1, 2, 3}), o corte vale 1.5 na F1 (violado), 1.0 na F2 (não violado) e **1.5 na F3 (violado)**. A F3 recupera esse corte.
+
+### Resultados da F3
+
+| Instância | Obtido | Raiz / nós / tempo |
+|---|---|---|
+| toy | **170** — cruzamentos (1, 0), (2, 4), (3, 6) | 170.00 / 1 / 0.66 s |
+| EIL22_50 | **371** — cruzamentos (1, 12), (2, 13), (11, 21) | 371.00 / 1 / 0.82 s |
+| EILB101_66 | **982** — 9 rotas, uma só com linehauls (39) | 973.00 / 29 / 353.09 s (raiz em 101.11 s) |
+| GJ4 (custo real) | **296533.1646** — 7 rotas, uma só com linehauls (5) | 293530.74 / 23 / 842.53 s (raiz em 318.50 s) |
+
+### Comparação F1 × F2 × F3
+
+| Instância | F1: raiz / nós / tempo | F2: raiz / nós / tempo | F3: raiz / nós / tempo |
+|---|---|---|---|
+| EILB101_66 | 978.00 / 9 / 269.41 s | 972.00 / 27 / 193.71 s | 973.00 / 29 / 353.09 s |
+| GJ4 | 294229.19 / 5 / 200.60 s | 293291.97 / 25 / 189.25 s | 293530.74 / 23 / 842.53 s |
+
+| Instância | Gap da raiz: F1 / F2 / F3 | Tempo da raiz: F1 / F2 / F3 |
+|---|---|---|
+| EILB101_66 | 0.41% / 1.02% / 0.92% | 114.26 / 34.55 / 101.11 s |
+| GJ4 | 0.78% / 1.09% / 1.01% | 68.78 / 35.73 / 318.50 s |
+
+**Conclusão: a F3 é dominada.**
+- **Limite:** recupera só uma parte pequena da diferença entre F2 e F1, cerca de 17% na EILB101_66 e 25% na GJ4. Na prática, empata com a F2 em número de nós.
+- **Custo:** a raiz fica de 3× (EILB101_66) a 9× (GJ4) mais lenta que a da F2, e mais lenta até que a da F1. $G^L$ ganha $|L| \cdot |B|$ arcos de sombra e $|B|$ packing sets, e o pricing de $G^L$ deixa de ser "só linehauls".
+- **Leitura:** os rank-1 que fecham o gap da F1 envolvem vários backhauls de uma vez, e não só o primeiro. Declarar um vértice além do cruzamento basta para o corte da Figura 2, mas não para as instâncias de 100 clientes. A variante simétrica, com $G^B$ declarando o último linehaul, tem a mesma limitação. Declarar $k$ backhauls faz $G^L$ crescer até virar a F1.
 
 ## Referências para o benchmark
 
