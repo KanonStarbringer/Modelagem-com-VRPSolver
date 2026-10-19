@@ -11,6 +11,8 @@
 > A quinta leva (Cutting Stock e Vector Packing 2D, extensões do BPP, nas subpastas `CSP/` e `VPP/`) está em [README-complementares-5.md](README-complementares-5.md).
 >
 > A sexta leva (Generalized Assignment Problem e Capacitated Arc Routing Problem, nas subpastas `GAP/` e `CARP/`) está em [README-complementares-6.md](README-complementares-6.md).
+>
+> A sétima leva (Capacitated Location-Routing e Two-Echelon CVRP, nas subpastas `CLRP/` e `2ECVRP/`) está em [README-complementares-7.md](README-complementares-7.md).
 
 ## Índice dos modelos
 
@@ -36,6 +38,8 @@
 | 5 | Vector Packing 2D | [`VPP/`](VPP/README.md) |
 | 6 | Generalized Assignment (um grafo por agente) | [`GAP/`](GAP/README.md) |
 | 6 | Capacitated Arc Routing (grafo de estados, RCC) | [`CARP/`](CARP/README.md) |
+| 7 | Capacitated Location-Routing (abertura de depósitos) | [`CLRP/`](CLRP/README.md) |
+| 7 | Two-Echelon CVRP (1º nível no mestre, entrega fracionada) | [`2ECVRP/`](2ECVRP/README.md) |
 
 Data: 2026-10-16
 Contexto: Exercícios complementares da Lista 1: **CVRP simétrico**, **Open VRP (OVRP)** e **VRP com custo fixo**. Os três usam o mesmo grafo do CVRP, então compartilham parser, toy e instâncias. Segue o roteiro de [mCTP no VRPSolver - Instâncias, toy e parser](../mCTP/README.md).
