@@ -20,6 +20,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`Complementares/` (2)](Complementares/README-complementares-2.md) | VRPTW, Multi-Depot VRP e Heterogeneous Fleet VRP | ✓ | Solomon (56), Cordeau (23), Golden/Taillard (8); R101, p01, p02 e c50_14hd batem com os ótimos |
 | [`Complementares/` (3)](Complementares/README-complementares-3.md) | VRPB (formulações F1 e F2 de Queiroga et al.), Site-Dependent VRP, Fleet Size and Mix VRP, PDPTW, E-VRP e Rich VRP | ✓ | Toth-Vigo (33) e GJB (68); Chao et al. (23); Golden FSM (24); Li & Lim (56); G-VRP (96); Rich VRP com regressões em VRPTW/MDVRP |
 | [`Complementares/` (4)](Complementares/README-complementares-4.md) | Aula 5: TSPHS e OPHS (cortes de conectividade sob demanda), VRP com drone (arcos paralelos, packing sets em arcos) e Bin Packing (Ryan-Foster) | ✓ | Barbosa (2018) (267); Divsalar/Sohrabi (90); TSPLIB (5); BPPLIB (88); h05_c50_l150_09, eil51-H4-T3-S3 e u120_00 batem |
+| [`Complementares/` (5)](Complementares/README-complementares-5.md) | Cutting Stock (grafo arc-flow, sem packing sets, multiplicidade de caminhos) e Vector Packing 2D (dois recursos principais) | ✓ | BPPLIB CSP (388); Spieksma e Caprara & Toth (400); u120_00, u1000_00, Hard28_BPP14, CL_06_25_01 e CL_09_25_01 batem |
 
 Cada pasta de exercício tem:
 
