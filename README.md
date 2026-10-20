@@ -23,6 +23,7 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`Complementares/` (5)](Complementares/README-complementares-5.md) | Cutting Stock (grafo arc-flow, sem packing sets, multiplicidade de caminhos) e Vector Packing 2D (dois recursos principais) | ✓ | BPPLIB CSP (388); Spieksma e Caprara & Toth (400); u120_00, u1000_00, Hard28_BPP14, CL_06_25_01 e CL_09_25_01 batem |
 | [`Complementares/` (6)](Complementares/README-complementares-6.md) | Generalized Assignment (grafos heterogêneos, packing sets atravessando os grafos) e CARP (grafo de estados de arestas, cortes de capacidade) | ✓ | Yagiura C, D e E (45); gdb, val, egl e kshs (87); c05100, d05100, d05200, gdb1, val1C, val3C, kshs1 e egl-e1-C batem |
 | [`Complementares/` (7)](Complementares/README-complementares-7.md) | CLRP (abertura de depósitos fora dos grafos, carga mapeada com coeficiente) e 2E-CVRP (rotas de caminhão enumeradas no mestre, entrega fracionada por transporte) | ✓ | Prodhon (30) e Barreto (13); Breunig, conjuntos 2 a 6 (207); coord20-5-1, coord50-5-1, coord50-5-1b, Gaspelle, E-n22-k4-s6-17, E-n51-k5-s2-17 e 100-5-1 batem |
+| [`Complementares/` (8)](Complementares/README-complementares-8.md) | VRPTWMD-2R (rotas a pé enumeradas como padrões no parser, um grafo por tamanho de equipe) | ✓ | Senna et al. (2024) (145): ótimo provado em todas; 131 batem com o artigo, 9 abertas fechadas no UB publicado e 5 abertas com UB melhorado; batch e verificador independente |
 
 Cada pasta de exercício tem:
 
@@ -69,4 +70,5 @@ As instâncias de benchmark pertencem aos seus autores e estão aqui só para re
 - CARP: gdb, val, egl e kshs, via [CARPData.jl](https://github.com/rafaelmartinelli/CARPData.jl) (R. Martinelli).
 - CLRP: Prodhon (Prins, Prodhon & Wolfler Calvo, 2006) e Barreto (2007), via [lrp-instances](https://github.com/alberto-santini/lrp-instances) (Cavagnini, Santini & Schneider).
 - 2E-CVRP: conjuntos 2 a 6 (Perboli et al.; Crainic et al.; Hemmelmayr et al.; Baldacci et al.), na versão unificada de [U. Breunig](https://prolog.univie.ac.at/research/TwoEVRP/).
+- VRPTWMD-2R: Senna, Coelho, Morabito & Munari (2024), via [página de P. Munari](https://www.dep.ufscar.br/munari/vrptwmd/).
 - m-CTP: Hà et al. (2013), via [Oliveira, Pessoa & Roboredo](https://github.com/brunomattos1/m-ctp_instances).

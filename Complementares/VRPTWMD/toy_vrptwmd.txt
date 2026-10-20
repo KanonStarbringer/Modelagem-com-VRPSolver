@@ -1,0 +1,23 @@
+toy_vrptwmd
+
+3	8
+
+VEHICLE
+NUMBER     CAPACITY
+  25         200
+
+CLU NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE   TIME
+    0      0          0          0          0        300          0
+    1      1         -4          9         91        104          0
+    2      0         -8         17        112        146          0
+    3     17        -16          3         72         92          0
+
+CUST NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE TIME  CLUSTER
+    0      3          0          5        161        184         10          1
+    1     -2          0          1        118        133         10          1
+    2      0         -5          3        124        176         10          1
+    3     -1         -6          9        188        223         10          2
+    4      4        -12          1        172        204         10          2
+    5      0         -9          7        141        185         10          2
+    6     13        -19          2         76        120         10          3
+    7     18        -18          1         92         98         10          3

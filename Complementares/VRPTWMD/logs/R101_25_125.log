@@ -1,0 +1,250 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- MAIN PARAMETERS ---
+GlobalTimeLimitInTick = 360000
+GlobalTimeLimit = 3600
+ClockType = 0
+MaxNbOfBBtreeNodeTreated = 100000
+optimalityGapTolerance = 1e-06
+relOptimalityGapTolerance = 1e-09
+ApplyPreprocessing = false
+PreprocessVariablesLocalBounds = false
+treeSearchStrategy = 1
+OpenNodesLimit = 1000
+DEFAULTPRINTLEVEL = 0
+--- MIP SOLVER PARAMETERS ---
+solverName = CPLEX_SOLVER
+MipSolverMaxBBNodes = 2000000
+MipSolverMaxTime = 360000
+MipSolverMultiThread = 1
+--- COLUMN GENERATION PARAMETERS ---
+SolverSelectForMast = a
+  colGenSubProbSolMode = customSolver
+mastInitMode = localArtCol
+ArtVarPenaltyUpdateFactor = 2
+ArtVarMaxNbOfPenaltyUpdates = 5
+MaxNbOfStagesInColGenProcedure = 3
+GenerateProperColumns = false
+InsertAllGeneratedColumnsInFormRatherThanInPool = true
+InsertNewNonNegColumnsDirectlyInFormRatherThanInPool = true
+ColumnCleanupThreshold = 10000
+ColumnCleanupRatio = 0.66
+ReducedCostFixingThreshold = 0.9
+--- CUT GENERATION PARAMETERS ---
+MasterCuttingPlanesDepthLimit = 1000
+MaxNbOfCutGeneratedAtEachIter = 1000
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+CutCleanupThreshold = 1
+CutCleanupRatio = 0.66
+ColGenSpRelaxationImprovementPriority = 0
+--- STABILIZATION PARAMETERS ---
+colGenDualPriceSmoothingAlphaFactor = 1
+colGenDualPriceSmoothingBetaFactor = 0
+colGenStabilizationFunctionType = none
+colGenProximalStabilizationRule = undefined
+StabilFuncKappa = 1
+colGenStabilizationMaxTreeDepth = 10000
+StabilizationMinPhaseOfStage = 0
+--- PRIMAL HEURISTIC PARAMETERS ---
+UseInitialPrimalHeur = false
+MaxTimeForRestrictedMasterIpHeur = -1
+CallFrequencyOfRestrictedMasterIpHeur = 5
+MIPemphasisInRestrictedMasterIpHeur = 1
+PolishingAfterTimeInRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+CallFrequencyOfDivingHeur = 1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+FixIntValBeforeRoundingHeur = true
+MaxNbOfCgIteDuringRh = 5000
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+DivingHeurStopsWithFirstFeasSol = false
+DivingHeurPreprocessBeforeChoosingVar = false
+StrongDivingCandidatesNumber = 1
+EvalAlgParamsInDiving = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 1
+LocalSearchHeurUseDepthLimit = -1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+MaxFactorOfColFixedByLocalSearchHeur = 0.8
+MaxLocalSearchIterationCounter = 3
+--- STRONG BRANCHING PARAMETERS ---
+SimplifiedStrongBranchingParameterisation = true
+StrongBranchingPhaseOneCandidatesNumber = 100
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.2
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.02
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOne = max#cand. = 100 max#cg.iters = 0 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.2
+StrongBranchingPhaseTwo = max#cand. = 3 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.02
+StrongBranchingPhaseThree = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 10000 red.cost.fix&enum. = true tree.size.ratio = 1
+StrongBranchingPhaseFour =not active
+--- DEBUG OUTPUT PARAMETERS ---
+printMasterPrimalSols = 0
+--- VRPSOLVER PARAMETERS ---
+RCSPstopCutGenTimeThresholdInPricing = 10
+RCSPhardTimeThresholdInPricing = 25
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 2
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPmaxNumOfLabelsInEnumeration = 500000
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+RCSPmaxNumOfEnumeratedSolutions = 5000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPmaxNumOfEnumSolsForEndOfNodeMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 8
+RCSPrankOneCutsMaxNumRows = 5
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMemoryType = 0
+RCSPrankOneCutsLSnumIterations = 1000
+RCSPallowRoutesWithSameVerticesSet = true
+RCSPredCostFixingFalseGap = 0
+SafeDualBoundScaleFactor = -1
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+MaxNumEnumSolsInRestrictedMasterIpHeur = 5000
+
+prName & bcTimeMain \\ 
+New model incumbent solution 31113, TIME = 0h0m0s3t = 3
+RCSP solver info : size of non-robust cut bitmask in a label is 640 bits
+Bucket steps were recalculated for graph G_0 : [40, 46]
+RCSP solver info : non-symmetric case as the reverse arc for 0->25 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 68( 5.96491% ) / 68( 100% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 106( 9.29825% ) / 106( 100% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+RCSP solver info: sparse network detected
+Bucket steps were recalculated for graph G_1 : [40, 46]
+RCSP solver info : non-symmetric case as the reverse arc for 0->25 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 484( 26.6227% ) / 484( 100% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 796( 43.7844% ) / 796( 100% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+RCSP solver info: sparse network detected
+Bucket steps were recalculated for graph G_2 : [40, 46]
+RCSP solver info : non-symmetric case as the reverse arc for 0->25 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 865( 30.8048% ) / 865( 100% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 1243( 44.2664% ) / 1243( 100% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+lm-1Rank cuts separator: subproblem dependent rank-1 cuts memory will be used, as the vertices set is not the same in subproblems 
+Model is built TIME = 0h0m0s7t = 7
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 31113 ], TIME = 0h0m0s9t = 9
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 57 art. vars. (57 active)
+************************************************************************************************
+--------------------------------------------------------------------------
+BaPCod info : first we run the root node with rank-1 cuts with node memory
+--------------------------------------------------------------------------
+#<DWph=2> <it=  1> <et=0.10> <Mt= 0.00> <Spt= 0.00> <nCl= 44> <al=0.00> <DB=-5478841.8000> <Mlp=933390.3000> <PB=31113.01> 
+#<DWph=2> <it=  2> <et=0.10> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <al=0.55> <DB=-2859133.4868> <Mlp=323548.8960> <PB=31113.01> 
+#<DWph=2> <it=  3> <et=0.10> <Mt= 0.00> <Spt= 0.00> <nCl= 18> <al=0.45> <DB=-2095185.4025> <Mlp=249770.6720> <PB=31113.01> 
+#<DWph=2> <it=  4> <et=0.11> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.35> <DB=-1872112.3581> <Mlp=69863.6120> <PB=31113.01> 
+<DWph=2> <it=  5> <et=0.12> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <al=0.00> <DB=29383.0000> <Mlp=32633.0000> <PB=31113.01> 
+<DWph=2> <it=  6> <et=0.12> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=32563.0000> <Mlp=32563.0000> <PB=31113.01> 
+<DWph=1> <it=  7> <et=0.12> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.05> <DB=-895977.3000> <Mlp=32563.0000> <PB=31113.01> 
+<DWph=1> <it=  8> <et=0.13> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.15> <DB=-103485.9685> <Mlp=31113.0000> <PB=31113> 
+<DWph=1> <it=  9> <et=0.13> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB=31113.0000> <Mlp=31113.0000> <PB=31113> 
+    RCSP exact solver info for graph G_0 : TT = 0.000116, pt = 8e-06, dt = 3.5e-05, ct = 2e-06, ndl = 62', bdl = 0', odl = 20', odf = 87', bsi = 2', bdch = 0', odch = 20', lcp = 0', #sols = 2
+    RCSP exact solver info for graph G_1 : TT = 0.000639, pt = 3.3e-05, dt = 0.000374, ct = 3e-06, ndl = 531', bdl = 424', odl = 255', odf = 1197', bsi = 76', bdch = 2078', odch = 574', lcp = 517', #sols = 76
+    RCSP exact solver info for graph G_2 : TT = 0.001136, pt = 5.3e-05, dt = 0.00063, ct = 9e-06, ndl = 1157', bdl = 886', odl = 416', odf = 2288', bsi = 173', bdch = 6023', odch = 1232', lcp = 1507', #sols = 150
+<DWph=0> <it= 10> <et=0.14> <Mt= 0.00> <Spt= 0.00> <nCl=119> <al=0.00> <DB=31113.0000> <Mlp=31113.0000> <PB=31113> 
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 1.44444 aver.buck.num. = 21.1111
+@@ 1 0 31113 3.7e-05 3.7e-05 51.6129 0.14
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 4.07031 aver.buck.num. = 14.2031
+@@ 1 0 31113 0.000377 0.000377 38.7713 0.14
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 3.89912 aver.buck.num. = 12.3158
+@@ 1 0 31113 0.000639 0.000639 41.2804 0.14
+ColGenEvalAlg final dual bound: 31113 (rounded: 31113)
+New model incumbent solution 31113, TIME = 0h0m0s15t = 15
+************************************************************************************************
+Search is finished, global bounds : [ 31113 , 31113 ], TIME = 0h0m0s18t = 18
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: R101_25_125 & 1 & 31113.01 & 31113.00 & 0.15 & 1 & 31113.00 & 31113 & 0.19 \\
+Custo ótimo: 31113.0
+veículo com 2 entregador(es):
+  parking 5: chega 34, sai 82   a pé: P5 - 50 - 88 - 119 - P5 | P5 - 4 - 28 - P5
+  parking 8: chega 95, sai 133   a pé: P8 - 37 - 63 - P8 | P8 - 7 - 61 - P8
+  volta ao depósito em 158   dist. veículo 58, a pé 22, custo 1802
+veículo com 2 entregador(es):
+  parking 21: chega 62, sai 118   a pé: P21 - 83 - P21 | P21 - 20 - 27 - P21
+  parking 24: chega 153, sai 182   a pé: P24 - 64 - P24 | P24 - 23 - 26 - P24
+  volta ao depósito em 212   dist. veículo 73, a pé 27, custo 1957
+veículo com 2 entregador(es):
+  parking 12: chega 63, sai 159   a pé: P12 - 11 - 98 - 51 - P12 | P12 - 58 - 72 - P12
+  volta ao depósito em 174   dist. veículo 30, a pé 35, custo 1535
+veículo com 2 entregador(es):
+  parking 2: chega 50, sai 180   a pé: P2 - 53 - 91 - 69 - P2 | P2 - 45 - 54 - 71 - 1 - P2
+  volta ao depósito em 198   dist. veículo 36, a pé 46, custo 1606
+veículo com 2 entregador(es):
+  parking 7: chega 81, sai 151   a pé: P7 - 38 - 42 - 49 - 6 - P7 | P7 - 40 - P7
+  volta ao depósito em 172   dist. veículo 42, a pé 12, custo 1632
+veículo com 2 entregador(es):
+  parking 19: chega 76, sai 157   a pé: P19 - 18 - 117 - 102 - P19 | P19 - 78 - 33 - 77 - P19
+  volta ao depósito em 189   dist. veículo 64, a pé 32, custo 1872
+veículo com 2 entregador(es):
+  parking 11: chega 67, sai 177   a pé: P11 - 115 - 10 - P11 | P11 - 104 - 100 - 99 - P11
+  volta ao depósito em 210   dist. veículo 66, a pé 45, custo 1905
+veículo com 3 entregador(es):
+  parking 23: chega 68, sai 141   a pé: P23 - 106 - 70 - P23 | P23 - 22 - 86 - 103 - 84 - P23 | P23 - 93 - P23
+  parking 25: chega 172, sai 194   a pé: P25 - 97 - P25 | P25 - 59 - P25 | P25 - 24 - P25
+  volta ao depósito em 227   dist. veículo 87, a pé 34, custo 2204
+veículo com 2 entregador(es):
+  parking 18: chega 87, sai 175   a pé: P18 - 62 - 17 - 121 - 46 - P18 | P18 - 30 - 87 - P18
+  volta ao depósito em 190   dist. veículo 30, a pé 25, custo 1525
+veículo com 2 entregador(es):
+  parking 3: chega 116, sai 201   a pé: P3 - 75 - 120 - 2 - 107 - P3 | P3 - 74 - 36 - 112 - P3
+  volta ao depósito em 223   dist. veículo 44, a pé 28, custo 1668
+veículo com 2 entregador(es):
+  parking 10: chega 124, sai 199   a pé: P10 - 39 - 118 - 92 - 82 - P10 | P10 - 80 - 9 - 79 - P10
+  volta ao depósito em 224   dist. veículo 50, a pé 26, custo 1726
+veículo com 3 entregador(es):
+  parking 20: chega 126, sai 195   a pé: P20 - 41 - 96 - P20 | P20 - 19 - 89 - P20 | P20 - 65 - 81 - 31 - P20
+  volta ao depósito em 226   dist. veículo 62, a pé 26, custo 1946
+veículo com 2 entregador(es):
+  parking 16: chega 75, sai 153   a pé: P16 - 116 - 124 - 15 - P16 | P16 - 73 - P16
+  parking 17: chega 164, sai 198   a pé: P17 - 47 - P17 | P17 - 16 - P17
+  volta ao depósito em 228   dist. veículo 70, a pé 26, custo 1926
+veículo com 3 entregador(es):
+  parking 15: chega 61, sai 124   a pé: P15 - 52 - 113 - 109 - P15 | P15 - 105 - 110 - P15 | P15 - 14 - 32 - P15
+  parking 13: chega 159, sai 175   a pé: P13 - 12 - P13
+  volta ao depósito em 186   dist. veículo 61, a pé 32, custo 1942
+veículo com 2 entregador(es):
+  parking 9: chega 97, sai 151   a pé: P9 - 8 - 123 - P9 | P9 - 35 - 60 - 56 - P9
+  parking 1: chega 168, sai 206   a pé: P1 - 48 - 0 - P1 | P1 - 34 - P1
+  volta ao depósito em 221   dist. veículo 64, a pé 30, custo 1870
+veículo com 3 entregador(es):
+  parking 14: chega 32, sai 86   a pé: P14 - 122 - 114 - P14 | P14 - 76 - 85 - 44 - P14 | P14 - 13 - 68 - P14
+  parking 6: chega 108, sai 161   a pé: P6 - 66 - P6 | P6 - 5 - 55 - P6
+  volta ao depósito em 172   dist. veículo 65, a pé 55, custo 2005
+veículo com 3 entregador(es):
+  parking 22: chega 97, sai 143   a pé: P22 - 108 - 111 - 95 - P22 | P22 - 94 - P22 | P22 - 21 - 67 - P22
+  parking 4: chega 157, sai 205   a pé: P4 - 43 - 101 - 25 - P4 | P4 - 3 - 90 - P4 | P4 - 29 - 57 - P4
+  volta ao depósito em 230   dist. veículo 65, a pé 42, custo 1992
+OK: cada cluster visitado uma vez e custo conferido (31113)

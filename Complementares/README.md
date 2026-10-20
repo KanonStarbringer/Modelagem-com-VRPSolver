@@ -13,6 +13,8 @@
 > A sexta leva (Generalized Assignment Problem e Capacitated Arc Routing Problem, nas subpastas `GAP/` e `CARP/`) está em [README-complementares-6.md](README-complementares-6.md).
 >
 > A sétima leva (Capacitated Location-Routing e Two-Echelon CVRP, nas subpastas `CLRP/` e `2ECVRP/`) está em [README-complementares-7.md](README-complementares-7.md).
+>
+> A oitava leva (VRPTW com múltiplos entregadores e roteamento em dois níveis, VRPTWMD-2R, na subpasta `VRPTWMD/`) está em [README-complementares-8.md](README-complementares-8.md).
 
 ## Índice dos modelos
 

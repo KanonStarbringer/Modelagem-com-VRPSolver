@@ -1,0 +1,321 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- MAIN PARAMETERS ---
+GlobalTimeLimitInTick = 360000
+GlobalTimeLimit = 3600
+ClockType = 0
+MaxNbOfBBtreeNodeTreated = 100000
+optimalityGapTolerance = 1e-06
+relOptimalityGapTolerance = 1e-09
+ApplyPreprocessing = false
+PreprocessVariablesLocalBounds = false
+treeSearchStrategy = 1
+OpenNodesLimit = 1000
+DEFAULTPRINTLEVEL = 0
+--- MIP SOLVER PARAMETERS ---
+solverName = CPLEX_SOLVER
+MipSolverMaxBBNodes = 2000000
+MipSolverMaxTime = 360000
+MipSolverMultiThread = 1
+--- COLUMN GENERATION PARAMETERS ---
+SolverSelectForMast = a
+  colGenSubProbSolMode = customSolver
+mastInitMode = localArtCol
+ArtVarPenaltyUpdateFactor = 2
+ArtVarMaxNbOfPenaltyUpdates = 5
+MaxNbOfStagesInColGenProcedure = 3
+GenerateProperColumns = false
+InsertAllGeneratedColumnsInFormRatherThanInPool = true
+InsertNewNonNegColumnsDirectlyInFormRatherThanInPool = true
+ColumnCleanupThreshold = 10000
+ColumnCleanupRatio = 0.66
+ReducedCostFixingThreshold = 0.9
+--- CUT GENERATION PARAMETERS ---
+MasterCuttingPlanesDepthLimit = 1000
+MaxNbOfCutGeneratedAtEachIter = 1000
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+CutCleanupThreshold = 1
+CutCleanupRatio = 0.66
+ColGenSpRelaxationImprovementPriority = 0
+--- STABILIZATION PARAMETERS ---
+colGenDualPriceSmoothingAlphaFactor = 1
+colGenDualPriceSmoothingBetaFactor = 0
+colGenStabilizationFunctionType = none
+colGenProximalStabilizationRule = undefined
+StabilFuncKappa = 1
+colGenStabilizationMaxTreeDepth = 10000
+StabilizationMinPhaseOfStage = 0
+--- PRIMAL HEURISTIC PARAMETERS ---
+UseInitialPrimalHeur = false
+MaxTimeForRestrictedMasterIpHeur = -1
+CallFrequencyOfRestrictedMasterIpHeur = 5
+MIPemphasisInRestrictedMasterIpHeur = 1
+PolishingAfterTimeInRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+CallFrequencyOfDivingHeur = 1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+FixIntValBeforeRoundingHeur = true
+MaxNbOfCgIteDuringRh = 5000
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+DivingHeurStopsWithFirstFeasSol = false
+DivingHeurPreprocessBeforeChoosingVar = false
+StrongDivingCandidatesNumber = 1
+EvalAlgParamsInDiving = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 1
+LocalSearchHeurUseDepthLimit = -1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+MaxFactorOfColFixedByLocalSearchHeur = 0.8
+MaxLocalSearchIterationCounter = 3
+--- STRONG BRANCHING PARAMETERS ---
+SimplifiedStrongBranchingParameterisation = true
+StrongBranchingPhaseOneCandidatesNumber = 100
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.2
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.02
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOne = max#cand. = 100 max#cg.iters = 0 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.2
+StrongBranchingPhaseTwo = max#cand. = 3 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.02
+StrongBranchingPhaseThree = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 10000 red.cost.fix&enum. = true tree.size.ratio = 1
+StrongBranchingPhaseFour =not active
+--- DEBUG OUTPUT PARAMETERS ---
+printMasterPrimalSols = 0
+--- VRPSOLVER PARAMETERS ---
+RCSPstopCutGenTimeThresholdInPricing = 10
+RCSPhardTimeThresholdInPricing = 25
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 2
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPmaxNumOfLabelsInEnumeration = 500000
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+RCSPmaxNumOfEnumeratedSolutions = 5000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPmaxNumOfEnumSolsForEndOfNodeMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 8
+RCSPrankOneCutsMaxNumRows = 5
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMemoryType = 0
+RCSPrankOneCutsLSnumIterations = 1000
+RCSPallowRoutesWithSameVerticesSet = true
+RCSPredCostFixingFalseGap = 0
+SafeDualBoundScaleFactor = -1
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+MaxNumEnumSolsInRestrictedMasterIpHeur = 5000
+
+prName & bcTimeMain \\ 
+New model incumbent solution 12281, TIME = 0h0m0s1t = 1
+RCSP solver info : size of non-robust cut bitmask in a label is 640 bits
+RCSP solver info: sparse network detected
+Bucket steps were recalculated for graph G_0 : [40, 48]
+RCSP solver info : non-symmetric case as the reverse arc for 0->15 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 489( 41.5816% ) / 489( 100% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 519( 44.1327% ) / 519( 100% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+RCSP solver info: sparse network detected
+Bucket steps were recalculated for graph G_1 : [40, 48]
+RCSP solver info : non-symmetric case as the reverse arc for 0->15 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 1145( 70.1593% ) / 980( 85.5895% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 1183( 72.4877% ) / 1003( 84.7844% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+RCSP solver info: sparse network detected
+Bucket steps were recalculated for graph G_2 : [40, 48]
+RCSP solver info : non-symmetric case as the reverse arc for 0->15 does not exist
+Bidirectional border value is initialised to 100
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 1355( 71.2408% ) / 890( 65.6827% )
+RCSP solver info : number of back. reachable buckets / buck. strongly connected components is 1449( 76.183% ) / 649( 44.7895% )
+RCSP solver info: std. label size is 64, ext. label size is 144
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+lm-1Rank cuts separator: subproblem dependent rank-1 cuts memory will be used, as the vertices set is not the same in subproblems 
+Model is built TIME = 0h0m0s11t = 11
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 12281 ], TIME = 0h0m0s15t = 15
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 37 art. vars. (37 active)
+************************************************************************************************
+--------------------------------------------------------------------------
+BaPCod info : first we run the root node with rank-1 cuts with node memory
+--------------------------------------------------------------------------
+#<DWph=2> <it=  1> <et=0.17> <Mt= 0.00> <Spt= 0.00> <nCl= 39> <al=0.00> <DB=-2577109.2200> <Mlp=221058.1800> <PB=12281.01> 
+#<DWph=2> <it=  2> <et=0.18> <Mt= 0.00> <Spt= 0.00> <nCl= 24> <al=0.55> <DB=-1688803.9748> <Mlp=56902.1360> <PB=12281.01> 
+#<DWph=2> <it=  3> <et=0.19> <Mt= 0.00> <Spt= 0.00> <nCl= 19> <al=0.45> <DB=-1264070.6273> <Mlp=26861.2120> <PB=12281.01> 
+<DWph=2> <it=  4> <et=0.19> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <al=0.51> <DB=-630271.5418> <Mlp=14050.0000> <PB=12281.01> 
+<DWph=2> <it=  5> <et=0.19> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.41> <DB=-245115.1901> <Mlp=14050.0000> <PB=12281.01> 
+<DWph=2> <it=  6> <et=0.20> <Mt= 0.00> <Spt= 0.01> <nCl=  6> <al=0.00> <DB=14000.0000> <Mlp=14050.0000> <PB=12281.01> 
+<DWph=2> <it=  7> <et=0.21> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=14050.0000> <Mlp=14050.0000> <PB=12281.01> 
+<DWph=1> <it=  8> <et=0.21> <Mt= 0.00> <Spt= 0.00> <nCl= 17> <al=0.11> <DB=-68325.0000> <Mlp=14050.0000> <PB=12281.01> 
+<DWph=1> <it=  9> <et=0.22> <Mt= 0.00> <Spt= 0.00> <nCl= 16> <al=0.01> <DB=-6026.6792> <Mlp=11702.5000> <PB=12281.01> 
+<DWph=1> <it= 10> <et=0.22> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.10> <DB=-3780.8341> <Mlp=11357.5000> <PB=12281.01> 
+<DWph=1> <it= 11> <et=0.23> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <al=0.19> <DB= 5969.0960> <Mlp=11242.6667> <PB=12281.01> 
+<DWph=1> <it= 12> <et=0.23> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=11242.6667> <Mlp=11242.6667> <PB=12281.01> 
+    RCSP exact solver info for graph G_0 : TT = 0.00041, pt = 2.5e-05, dt = 0.000215, ct = 3e-06, ndl = 319', bdl = 96', odl = 110', odf = 609', bsi = 39', bdch = 382', odch = 155', lcp = 69', #sols = 39
+    RCSP exact solver info for graph G_1 : TT = 0.001036, pt = 4.6e-05, dt = 0.000595, ct = 3e-06, ndl = 1027', bdl = 806', odl = 267', odf = 1807', bsi = 178', bdch = 4109', odch = 719', lcp = 838', #sols = 150
+    RCSP exact solver info for graph G_2 : TT = 0.001935, pt = 7.2e-05, dt = 0.001308, ct = 4e-06, ndl = 2019', bdl = 1754', odl = 409', odf = 3971', bsi = 302', bdch = 9619', odch = 1718', lcp = 1935', #sols = 149
+    RCSP exact solver info for graph G_0 : TT = 0.000646, pt = 0.000134, dt = 0.000268, ct = 1e-06, ndl = 319', bdl = 96', odl = 110', odf = 609', bsi = 39', bdch = 382', odch = 155', lcp = 69', #sols = 39
+    RCSP exact solver info for graph G_1 : TT = 0.00119, pt = 6.9e-05, dt = 0.000643, ct = 5e-06, ndl = 1027', bdl = 806', odl = 267', odf = 1807', bsi = 178', bdch = 4109', odch = 719', lcp = 838', #sols = 150
+    RCSP exact solver info for graph G_2 : TT = 0.002163, pt = 6.9e-05, dt = 0.001544, ct = 4e-06, ndl = 2019', bdl = 1754', odl = 409', odf = 3971', bsi = 302', bdch = 9619', odch = 1718', lcp = 1935', #sols = 149
+<DWph=0> <it= 13> <et=0.27> <Mt= 0.00> <Spt= 0.03> <nCl=214> <al=0.00> <DB=11242.6667> <Mlp=11242.6667> <PB=12281.01> 
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 4.6875 aver.buck.num. = 18.375
+@@ 1 0 11242.7 0.0002435 0.000269 47.9154 0.27
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 6.17021 aver.buck.num. = 17.3617
+@@ 1 0 11242.7 0.000623 0.000648 56.5263 0.27
+RCSP solver dynamic params and stats :  bidir.bord. = 100 aver.obdmd = 6.20175 aver.buck.num. = 16.6842
+@@ 1 0 11242.7 0.00143 0.001548 58.3466 0.27
+RCSP      solver labels distribution in 235 buckets (bucket size) : largest - 4, top 0.1% - 4, top 0.5% - 4, top 2% - 3, top 10% - 2, top 50% - 1
+Reduced cost fixing for graph G_0...  TT = 0.000388, pt = 1.4e-05, dt = 0.000143, ct = 0, ndl = 319', bdl = 0', odf = 182', bdch = 0', odch = 13', lcp = 0'
+181 buck. arcs remain (25.5% from prev., 8.34% from max.) + 2 jump buck. arcs (0.0922% from max.)
+Backward reduced cost fixing... 126 buck. arcs remain (14% from prev., 10.6% from max.) + 16 jump buck. arcs (1.35% from max.)
+ TT = 0.006196, pt = 1.4e-05, dt = 0.000143, ct = 0.000532, ndl = 319', bdl = 0', odf = 182', cnt = 150', bdch = 0', odch = 13', lcp = 0'
+RCSP      solver labels distribution in 235 buckets (bucket size) : largest - 4, top 0.1% - 4, top 0.5% - 4, top 2% - 3, top 10% - 2, top 50% - 1
+Run forward enumeration with border = 100... succeeded! lpt = 0.009358, ndl = 53', dl = 2', lpcb = 1', dch = 110'
+Run backward enumeration... succeeded! lpt = 0.001896, ndl = 50', dl = 1', lpcb = 1', dch = 360'
+Run enumeration concatenation with time limit 0.3 sec.... done!
+ TT = 0.039371, pt = 0.014092, dt = 0.011254, ct = 4.6e-05, ndl = 103', bdl = 3', lpcb = 2', cnt = 137', bdch = 470', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 10
+Estimating inspection time...     TT = 2.4e-05, performed by inspection with 10 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+RCSP      solver labels distribution in 461 buckets (bucket size) : largest - 9, top 0.1% - 9, top 0.5% - 8, top 2% - 7, top 10% - 5, top 50% - 1
+Reduced cost fixing for graph G_1...  TT = 0.000843, pt = 3.5e-05, dt = 0.000431, ct = 0, ndl = 1027', bdl = 0', odf = 504', bdch = 0', odch = 53', lcp = 0'
+1024 buck. arcs remain (48.1% from prev., 20.8% from max.) + 48 jump buck. arcs (0.975% from max.)
+Backward reduced cost fixing... 836 buck. arcs remain (31.2% from prev., 23.3% from max.) + 161 jump buck. arcs (4.5% from max.)
+ TT = 0.014195, pt = 3.5e-05, dt = 0.000431, ct = 0.001385, ndl = 1027', bdl = 0', odf = 504', cnt = 1047', bdch = 0', odch = 53', lcp = 0'
+RCSP      solver labels distribution in 461 buckets (bucket size) : largest - 9, top 0.1% - 9, top 0.5% - 8, top 2% - 7, top 10% - 5, top 50% - 1
+Run forward enumeration with border = 100... succeeded! lpt = 0.020395, ndl = 338', dl = 19', lpcb = 14', dch = 2199'
+Run backward enumeration... succeeded! lpt = 0.003924, ndl = 276', dl = 16', lpcb = 44', dch = 2971'
+Run enumeration concatenation with time limit 0.3 sec.... done!
+ TT = 0.051027, pt = 0.004729, dt = 0.024319, ct = 0.000148, ndl = 614', bdl = 35', lpcb = 58', cnt = 1159', bdch = 5170', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 30
+Estimating inspection time...     TT = 0.000103, performed by inspection with 30 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+RCSP      solver labels distribution in 717 buckets (bucket size) : largest - 13, top 0.1% - 13, top 0.5% - 11, top 2% - 9, top 10% - 6, top 50% - 2
+Reduced cost fixing for graph G_2...  TT = 0.001278, pt = 6.4e-05, dt = 0.000591, ct = 0, ndl = 2016', bdl = 0', odl = 3', odf = 1760', bdch = 0', odch = 303', lcp = 0'
+1717 buck. arcs remain (64.7% from prev., 30.1% from max.) + 84 jump buck. arcs (1.47% from max.)
+Backward reduced cost fixing... 1531 buck. arcs remain (47.8% from prev., 35.3% from max.) + 146 jump buck. arcs (3.37% from max.)
+ TT = 0.024173, pt = 6.4e-05, dt = 0.000591, ct = 0.00342, ndl = 2016', bdl = 0', odl = 3', odf = 1760', cnt = 3470', bdch = 0', odch = 303', lcp = 0'
+RCSP      solver labels distribution in 717 buckets (bucket size) : largest - 13, top 0.1% - 13, top 0.5% - 11, top 2% - 9, top 10% - 6, top 50% - 2
+Run forward enumeration with border = 100... succeeded! lpt = 0.018516, ndl = 919', dl = 53', lpcb = 132', dch = 6649'
+Run backward enumeration... succeeded! lpt = 0.00262, ndl = 853', dl = 40', lpcb = 248', dch = 12462'
+Run enumeration concatenation with time limit 0.3 sec.... done!
+ TT = 0.044154, pt = 0.004707, dt = 0.021136, ct = 0.000118, ndl = 1772', bdl = 93', lpcb = 380', cnt = 4163', bdch = 19111', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 74
+Estimating inspection time...     TT = 0.000197, performed by inspection with 74 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Added 9 columns in the formulation 
+Added 74 columns in the formulation 
+Added 149 columns in the formulation 
+Removed 115 columns (not in the enumerated set) from the formulation
+Regenerated 232 columns with the 'enumerated' flag
+Added 2 columns in the formulation 
+Added 2 columns in the formulation 
+Added 28 columns in the formulation 
+ColGenEvalAlg final dual bound: 11242.7 (rounded: 11243)
+----- Terminating the node by MIP -----
+Version identifier: 22.1.2.0 | 2024-11-26 | 0edbb82fd
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Nodes                        2000000
+CPXPARAM_Simplex_Tolerances_Optimality           9.9999999999999995e-08
+CPXPARAM_Simplex_Tolerances_Feasibility          9.9999999999999995e-08
+CPXPARAM_TimeLimit                               3527.4119999999998
+CPXPARAM_MIP_Tolerances_UpperCutoff              12281.000001
+CPXPARAM_MIP_Tolerances_MIPGap                   1.0000000000000001e-09
+Tried aggregator 1 time.
+MIP Presolve eliminated 5 rows and 196 columns.
+MIP Presolve modified 117 coefficients.
+Reduced MIP has 14 rows, 68 columns, and 158 nonzeros.
+Reduced MIP has 68 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.61 ticks)
+Probing time = 0.00 sec. (0.10 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 14 rows, 68 columns, and 158 nonzeros.
+Reduced MIP has 68 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.09 ticks)
+Probing time = 0.00 sec. (0.10 ticks)
+Clique table members: 23.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    11252.6667     9                  11252.6667       19         
+*     0     0      integral     0    12281.0000      Cuts: 12       30    0.00%
+      0     0        cutoff          12281.0000    12281.0000       30    0.00%
+Elapsed time = 0.04 sec. (1.43 ticks, tree = 0.01 MB, solutions = 1)
+
+Clique cuts applied:  5
+Zero-half cuts applied:  1
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (1.44 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (1.44 ticks)
+Solution status = Optimum
+New model incumbent solution 12281, TIME = 0h0m0s65t = 65
+************************************************************************************************
+Search is finished, global bounds : [ 12281 , 12281 ], TIME = 0h0m0s69t = 69
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: RC105_15_60 & 1 & 12281.01 & 12281.00 & 0.65 & 1 & 12281.00 & 12281 & 0.70 \\
+Custo ótimo: 12281.0
+veículo com 1 entregador(es):
+  parking 15: chega 68, sai 106   a pé: P15 - 14 - 51 - P15
+  parking 14: chega 111, sai 187   a pé: P14 - 41 - 13 - 49 - 56 - P14
+  volta ao depósito em 222   dist. veículo 79, a pé 18, custo 1908
+veículo com 2 entregador(es):
+  parking 11: chega 69, sai 141   a pé: P11 - 21 - 10 - 32 - P11 | P11 - 31 - P11
+  parking 10: chega 143, sai 183   a pé: P10 - 57 - P10 | P10 - 9 - 19 - P10
+  volta ao depósito em 214   dist. veículo 66, a pé 35, custo 1895
+veículo com 2 entregador(es):
+  parking 2: chega 30, sai 106   a pé: P2 - 1 - 18 - 35 - 46 - P2
+  parking 6: chega 110, sai 188   a pé: P6 - 30 - 40 - 59 - P6 | P6 - 5 - 22 - 37 - P6
+  volta ao depósito em 221   dist. veículo 67, a pé 34, custo 1904
+veículo com 3 entregador(es):
+  parking 7: chega 35, sai 93   a pé: P7 - 50 - P7 | P7 - 20 - P7 | P7 - 6 - P7
+  parking 8: chega 101, sai 151   a pé: P8 - 26 - 38 - P8 | P8 - 7 - 24 - P8
+  parking 4: chega 156, sai 203   a pé: P4 - 16 - 54 - P4 | P4 - 52 - P4 | P4 - 3 - 25 - P4
+  volta ao depósito em 238   dist. veículo 80, a pé 68, custo 2168
+veículo com 3 entregador(es):
+  parking 5: chega 40, sai 86   a pé: P5 - 4 - P5
+  parking 3: chega 88, sai 138   a pé: P3 - 2 - 58 - P3 | P3 - 36 - 42 - P3 | P3 - 34 - P3
+  parking 1: chega 141, sai 197   a pé: P1 - 0 - 55 - P1 | P1 - 43 - 53 - P1 | P1 - 33 - 44 - P1
+  volta ao depósito em 235   dist. veículo 83, a pé 75, custo 2205
+veículo com 3 entregador(es):
+  parking 12: chega 32, sai 80   a pé: P12 - 39 - 47 - P12 | P12 - 27 - 28 - P12 | P12 - 15 - 11 - 17 - P12
+  parking 9: chega 101, sai 154   a pé: P9 - 29 - 45 - P9 | P9 - 8 - 23 - P9
+  parking 13: chega 159, sai 193   a pé: P13 - 48 - P13 | P13 - 12 - P13
+  volta ao depósito em 231   dist. veículo 85, a pé 51, custo 2201
+OK: cada cluster visitado uma vez e custo conferido (12281)
