@@ -88,7 +88,7 @@ O caminho do `cplex.exe` fica no topo de `compacto_cplex.py`. O Hexaly tem um ú
 
 Para refazer as tabelas, rode dentro de `vrpsolver/` os scripts `python tabela.py`, `tabela_busca.py`, `tabela_ub.py`, `tabela_hexaly.py` e `tabela_compacto.py`.
 
-As saídas `saida_*.txt` do BaPCod guardam só as linhas `statistics:`, `RESULTADO;` e `Rota #` dos logs completos, que somam ~300 MB e vão para um repositório de dados com DOI. Com essas linhas, as tabelas saem idênticas às feitas a partir dos logs completos.
+As saídas `saida_*.txt` do BaPCod guardam só as linhas `statistics:`, `RESULTADO;` e `Rota #` dos logs completos, que somam ~300 MB e ficam fora do repositório. Com essas linhas, as tabelas saem idênticas às feitas a partir dos logs completos.
 
 ## Resultados (uma hora por instância, um thread)
 
