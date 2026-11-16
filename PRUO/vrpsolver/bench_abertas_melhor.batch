@@ -1,0 +1,14 @@
+instancias/bench_RL_n100_c1_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RL_n100_c2_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RL_n100_c2_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CE_n100_c2_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CE_n100_c2_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CL_n100_c1_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CL_n100_c1_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CL_n100_c2_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_CL_n100_c2_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RCE_n100_c1_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RCE_n100_c2_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RCL_n100_c1_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RCL_n100_c2_s1.txt -c config/PRUO_melhor_limitante_enum100k.cfg
+instancias/bench_RCL_n100_c2_s2.txt -c config/PRUO_melhor_limitante_enum100k.cfg

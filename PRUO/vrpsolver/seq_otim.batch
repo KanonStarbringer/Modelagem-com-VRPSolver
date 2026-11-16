@@ -1,0 +1,72 @@
+instancias/otim_bench_RE_n25_c1_s1.txt
+instancias/otim_bench_RE_n25_c1_s2.txt
+instancias/otim_bench_RE_n25_c2_s1.txt
+instancias/otim_bench_RE_n25_c2_s2.txt
+instancias/otim_bench_RL_n25_c1_s1.txt
+instancias/otim_bench_RL_n25_c1_s2.txt
+instancias/otim_bench_RL_n25_c2_s1.txt
+instancias/otim_bench_RL_n25_c2_s2.txt
+instancias/otim_bench_CE_n25_c1_s1.txt
+instancias/otim_bench_CE_n25_c1_s2.txt
+instancias/otim_bench_CE_n25_c2_s1.txt
+instancias/otim_bench_CE_n25_c2_s2.txt
+instancias/otim_bench_CL_n25_c1_s1.txt
+instancias/otim_bench_CL_n25_c1_s2.txt
+instancias/otim_bench_CL_n25_c2_s1.txt
+instancias/otim_bench_CL_n25_c2_s2.txt
+instancias/otim_bench_RCE_n25_c1_s1.txt
+instancias/otim_bench_RCE_n25_c1_s2.txt
+instancias/otim_bench_RCE_n25_c2_s1.txt
+instancias/otim_bench_RCE_n25_c2_s2.txt
+instancias/otim_bench_RCL_n25_c1_s1.txt
+instancias/otim_bench_RCL_n25_c1_s2.txt
+instancias/otim_bench_RCL_n25_c2_s1.txt
+instancias/otim_bench_RCL_n25_c2_s2.txt
+instancias/otim_bench_RE_n50_c1_s1.txt
+instancias/otim_bench_RE_n50_c1_s2.txt
+instancias/otim_bench_RE_n50_c2_s1.txt
+instancias/otim_bench_RE_n50_c2_s2.txt
+instancias/otim_bench_RL_n50_c1_s1.txt
+instancias/otim_bench_RL_n50_c1_s2.txt
+instancias/otim_bench_RL_n50_c2_s1.txt
+instancias/otim_bench_RL_n50_c2_s2.txt
+instancias/otim_bench_CE_n50_c1_s1.txt
+instancias/otim_bench_CE_n50_c1_s2.txt
+instancias/otim_bench_CE_n50_c2_s1.txt
+instancias/otim_bench_CE_n50_c2_s2.txt
+instancias/otim_bench_CL_n50_c1_s1.txt
+instancias/otim_bench_CL_n50_c1_s2.txt
+instancias/otim_bench_CL_n50_c2_s1.txt
+instancias/otim_bench_CL_n50_c2_s2.txt
+instancias/otim_bench_RCE_n50_c1_s1.txt
+instancias/otim_bench_RCE_n50_c1_s2.txt
+instancias/otim_bench_RCE_n50_c2_s1.txt
+instancias/otim_bench_RCE_n50_c2_s2.txt
+instancias/otim_bench_RCL_n50_c1_s1.txt
+instancias/otim_bench_RCL_n50_c1_s2.txt
+instancias/otim_bench_RCL_n50_c2_s1.txt
+instancias/otim_bench_RCL_n50_c2_s2.txt
+instancias/otim_bench_RE_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RE_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RE_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RE_n100_c2_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RL_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RL_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RL_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RL_n100_c2_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CE_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CE_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CE_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CE_n100_c2_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CL_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CL_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CL_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_CL_n100_c2_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCE_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCE_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCE_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCE_n100_c2_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCL_n100_c1_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCL_n100_c1_s2.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCL_n100_c2_s1.txt -c config/PRUO_enum100k.cfg
+instancias/otim_bench_RCL_n100_c2_s2.txt -c config/PRUO_enum100k.cfg

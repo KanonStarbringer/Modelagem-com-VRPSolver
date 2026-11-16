@@ -25,6 +25,8 @@ Os modelos usam o [VRPSolver](https://vrpsolver.math.u-bordeaux.fr/) (Julia, `Vr
 | [`Complementares/` (7)](Complementares/README-complementares-7.md) | CLRP (abertura de depósitos fora dos grafos, carga mapeada com coeficiente) e 2E-CVRP (rotas de caminhão enumeradas no mestre, entrega fracionada por transporte) | ✓ | Prodhon (30) e Barreto (13); Breunig, conjuntos 2 a 6 (207); coord20-5-1, coord50-5-1, coord50-5-1b, Gaspelle, E-n22-k4-s6-17, E-n51-k5-s2-17 e 100-5-1 batem |
 | [`Complementares/` (8)](Complementares/README-complementares-8.md) | VRPTWMD-2R (rotas a pé enumeradas como padrões no parser, um grafo por tamanho de equipe) | ✓ | Senna et al. (2024) (145): ótimo provado em todas; 131 batem com o artigo, 9 abertas fechadas no UB publicado e 5 abertas com UB melhorado; batch e verificador independente |
 
+Além dos exercícios, a pasta [`PRUO/`](PRUO/README.md) traz um modelo de pesquisa (doutorado, PPGEP/UFF): o roteamento de USVs com offloading de computação. Ela inclui o modelo no VRPSolver, as 72 instâncias de benchmark, a formulação compacta no CPLEX, um modelo no Hexaly e as abordagens sequenciais.
+
 Cada pasta de exercício tem:
 
 - `*_model.jl`: o modelo no VRPSolver;

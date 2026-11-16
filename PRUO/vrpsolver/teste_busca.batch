@@ -1,0 +1,4 @@
+instancias/bench_RE_n50_c2_s2.txt -c config/PRUO_melhor_limitante.cfg
+instancias/bench_CL_n50_c1_s2.txt -c config/PRUO_melhor_limitante.cfg
+instancias/bench_RCL_n50_c2_s2.txt -c config/PRUO_melhor_limitante.cfg
+instancias/bench_RCL_n25_c2_s1.txt -c config/PRUO_melhor_limitante.cfg
